@@ -63,4 +63,4 @@ Goto Airflow webserver
 
 ## Data Flow
 
-<img src = "https://github.com/RahieGadekar10/Expense_Prediction_Spark/blob/df8c1ac2debbc0a2413e693a53c6972fe26c7999/Capture.JPG"> </img>
+<img src = "https://github.com/RahieGadekar10/Expense_Prediction_Spark/blob/e3280f1b0a97c1ac20bad868e990d11a512fcc1f/Capture.png"> </img>
