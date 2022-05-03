@@ -60,3 +60,7 @@ Goto Airflow webserver
 ```
 - DAG will be present by the name user_processing.
 - Run/Schedule the DAG to execute prediction operation.
+
+## Data Flow
+
+<img src = "https://github.com/RahieGadekar10/Expense_Prediction_Spark/blob/df8c1ac2debbc0a2413e693a53c6972fe26c7999/Capture.JPG"> </img>
