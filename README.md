@@ -1,5 +1,5 @@
 # Expense Prediction Using Spark
-The Project is used to predict the expenses of an Adult based on the parameters such as age , sex, bmi , number of children, etc. Spark is used for data preprocessing and spark MLlib libraries are used for data transformation and model creation. Random Forest Model is used to train on the given data. The complete logging of each step is done in MongoDB database. You can predict the data using batch csv file or Real-Time. You can also upload the csv file of the data with the help of flask to predict on your custom data and download the predicted csv file. 
+The Project is used to predict the expenses of an Adult based on the parameters such as age , sex, bmi , number of children, etc. Spark is used for data preprocessing and spark MLlib libraries are used for data transformation and model creation. Random-Forest Model is used to train on the given data. The complete logging of each step is done in MongoDB database. You can predict the data using batch csv file or Real-Time. The Real-Time predicted data is stored in MongoDB database. You can also upload the csv file of the data on the webpage to predict on your custom data and download the predicted csv file. 
 
 ## Requirements : 
 - Create a MongoDB cluster 
