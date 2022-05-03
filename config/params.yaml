@@ -28,7 +28,7 @@ target_columns :
   columns : 'expenses'
 
 mongodb :
-  url : "mongodb+srv://rahie:rahie@cluster0.ugjkc.mongodb.net/test"
+  url : "mongodb+srv://<username>:<password>@cluster0.ugjkc.mongodb.net/test"
   streaming_database : "streaming"
   streaming_collection : "streaming_collection"
   prediction_columns : ["age","sex","bmi","children","smoker","timestamp","prediction"]
