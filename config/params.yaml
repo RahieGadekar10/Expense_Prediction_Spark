@@ -1,0 +1,52 @@
+training_data :
+  good_dir_path : 'Good_File_Path'
+  training_file_path : 'TrainingFile'
+
+log_database :
+  log_prediction_collection: 'logpredictioncollection'
+  log_training_database : "logtrainingdata"
+  log_training_collection : "logtrainingcollection"
+  log_prediction_database : 'logpredictiondata'
+
+kafka :
+  kafka_bootstrap_server : localhost:9092
+  kafka_topic_name : income_prediction
+  schema : "age INT,sex STRING,bmi DOUBLE,children INT,smoker STRING,region STRING"
+
+transformation :
+  String_Indexer :
+    input_columns : ["sex","smoker"]
+
+unwanted_columns :
+  columns : 'region'
+
+required_columns :
+  columns : ['age', 'sex_encoded', 'smoker_encoded', 'children', 'bmi']
+
+
+target_columns :
+  columns : 'expenses'
+
+mongodb :
+  url : "mongodb+srv://rahie:rahie@cluster0.ugjkc.mongodb.net/test"
+  streaming_database : "streaming"
+  streaming_collection : "streaming_collection"
+  prediction_columns : ["age","sex","bmi","children","smoker","timestamp","prediction"]
+
+pipeline_path : "data/pipeline"
+
+model_path : "data/model_path"
+
+prediction_data :
+  prediction_file : "prediction_file"
+
+update_datatype :
+  update_data : {
+                  'age': IntegerType(),
+                  'sex': StringType(),
+                  'bmi': FloatType(),
+                  'children': IntegerType(),
+                  'smoker': StringType(),
+                  'region': StringType(),
+                  'expenses': FloatType()
+                }
