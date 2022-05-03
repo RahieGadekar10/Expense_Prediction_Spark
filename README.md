@@ -1,6 +1,10 @@
 # Expense Prediction Using Spark
 The Project is used to predict the expenses of an Adult based on the parameters such as age , sex, bmi , number of children, etc. Spark is used for data preprocessing and spark MLlib libraries are used for data transformation and model creation. Random-Forest Model is used to train on the given data. The complete logging of each step is done in MongoDB database. You can predict the data using batch csv file or Real-Time. The Real-Time predicted data is stored in MongoDB database. You can also upload the csv file of the data on the webpage to predict on your custom data and download the predicted csv file. 
 
+## Data Flow
+
+<img src = "https://github.com/RahieGadekar10/Expense_Prediction_Spark/blob/8ca34edd7fcf51fb02bbafe3daeb21bf78f19ed3/Untitled.png"> </img>
+
 ## Requirements : 
 - Create a MongoDB cluster 
 - Enter the connection string of the MongoDB cluster along with username and password in config/params.yaml file.
@@ -60,7 +64,3 @@ Goto Airflow webserver
 ```
 - DAG will be present by the name user_processing.
 - Run/Schedule the DAG to execute prediction operation.
-
-## Data Flow
-
-<img src = "https://github.com/RahieGadekar10/Expense_Prediction_Spark/blob/8ca34edd7fcf51fb02bbafe3daeb21bf78f19ed3/Untitled.png"> </img>
